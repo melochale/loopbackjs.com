@@ -1,0 +1,13 @@
+logs/*
+!.gitkeep
+node_modules
+client/bower_components
+tmp
+.DS_Store
+.idea
+/npm-debug.log
+.strong-pm
+*.local.json
+dist/
+build
+client/app/index.html

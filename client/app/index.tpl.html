@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="neble" ng-controller="AppCtrl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="app/img/favicon.ico">
+    <title ng-bind="pageTitle"></title>
+
+    <!-- needed to remove # from url. see https://docs.angularjs.org/error/$location/nobase -->
+    <base href="/">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css styles/main.css -->
+    <!-- include: "type": "css", "files": "app/css/*.css" -->
+    <!-- include: "type": "css", "files": "app/src/modules/**/*.css" -->
+    <!-- endbuild -->
+</head>
+<body>
+    <div nb-header></div>
+    <div ui-view></div>
+    <div nb-footer></div>
+    <!-- build:js scripts/oldieshim.js -->
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.js"></script>
+    <![endif]-->
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js scripts/scripts.js -->
+    <!-- JS -->
+    <!-- include: "type": "js", "files": "app/src/*.js" -->
+    <!-- MODULES -->
+    <!-- include: "type": "js", "files": "app/src/modules/*/*.js" -->
+    <!-- include: "type": "js", "files": "app/src/modules/*/*/**/*.js" -->
+    <!-- endbuild -->
+</body>
+</html>
