@@ -1,6 +1,14 @@
 # loobackjs.com  
 The Chinese community of the Node.js framework loopback.
 
+
+## Install
+Enter the project root, and run below
+```bash
+npm install
+bower install
+npm start
+```
 ## Licence
 
 The MIT License (MIT)

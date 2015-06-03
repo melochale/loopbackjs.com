@@ -9,5 +9,5 @@ tmp
 .strong-pm
 *.local.json
 dist/
-build
+build/
 client/app/index.html
